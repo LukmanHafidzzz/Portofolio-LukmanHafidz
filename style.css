@@ -19,8 +19,13 @@ body {
 
 nav {
     background-color: var(--sr-black) !important;
+    transition: box-shadow 0.3s ease; /* Efek transisi untuk smooth transition */
+}
+
+.navbar-shadow {
     box-shadow: 0 0 10px 4px var(--pr-lavender);
 }
+
 
 .text-wh-nav {
     color: white !important;

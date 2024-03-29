@@ -16,3 +16,17 @@ window.onscroll = () => {
         }
     });
 };
+
+// Mendapatkan elemen navbar
+var navbar = document.getElementById("navbar");
+
+// Mendeteksi peristiwa scroll
+window.addEventListener("scroll", function() {
+    // Jika posisi scroll lebih besar dari 0, tambahkan kelas yang memiliki efek shadow
+    if (window.scrollY > 0) {
+        navbar.classList.add("navbar-shadow");
+    } else {
+        // Jika tidak, hapus kelas tersebut
+        navbar.classList.remove("navbar-shadow");
+    }
+});
