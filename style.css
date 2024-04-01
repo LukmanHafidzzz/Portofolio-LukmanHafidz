@@ -21,7 +21,7 @@ body {
 
 nav {
     background-color: var(--sr-black) !important;
-    transition: box-shadow 0.3s ease; /* Efek transisi untuk smooth transition */
+    transition: box-shadow 0.3s ease;
 }
 
 .navbar-shadow {
