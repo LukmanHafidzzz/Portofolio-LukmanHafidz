@@ -3,6 +3,8 @@
 :root {
     --pr-black: #0C0C0C;
     --sr-black: #0F0F0F;
+    --tr-black: #131313;
+    --vr-lavender: #5431ed;
     --pr-lavender: #7456FF;
     --sr-lavender: #8368FF;
     --sr-grey: #999999;
@@ -47,6 +49,22 @@ nav div ul li a:hover, nav div ul li a.text-active {
     color: #7456FF !important;
 }
 
+.cursor {
+    animation: blink 0.7s infinite;
+}
+
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
 .contact-btn {
     border: 2px solid var(--pr-lavender) !important;
     border-radius: 5px;
@@ -60,6 +78,70 @@ nav div ul li a:hover, nav div ul li a.text-active {
     color: white !important;
 }
 
+.connect-btn {
+    background-color: var(--pr-lavender) !important;
+    transition: 0.3s;
+    color: white !important;
+}
+
+.connect-btn:hover {
+    background-color: var(--vr-lavender) !important;
+    transition: 0.3s;
+}
+
 .section-1 {
     padding-top: 150px;
+}
+
+.text-justify {
+    text-align: justify !important;
+}
+
+.fs-7 {
+    font-size: small !important;
+}
+
+.img-hover {
+    transition: 0.3s !important;
+    border-radius: 15px !important;
+}
+
+.img-hover:hover {
+    transform: translate(-7px, -7px) !important;
+    box-shadow: 7px 7px 0px 0px var(--pr-lavender);
+}
+
+.card {
+    background-color: var(--tr-black) !important;
+}
+
+.frame {
+    overflow: hidden;
+    transition: 0.2s;
+}
+
+.frame:hover img {
+    transform: scale(1.1);
+}
+
+.frame img {
+    transition: 0.2s;
+    width: 100%;
+    height: auto;
+}
+
+.view-btn {
+    background-color: var(--tr-black);
+    box-shadow: 0 0 4px 0 rgba(255, 255, 255, 0.25);
+    border-radius: 5px;
+    transition: 0.3s;
+    color: white !important;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.view-btn:hover {
+    transition: 0.3s;
+    color: var(--pr-lavender) !important;
+    box-shadow: 0 0 4px 0 var(--pr-lavender);
 }

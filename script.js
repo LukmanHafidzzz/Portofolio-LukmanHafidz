@@ -30,3 +30,20 @@ window.addEventListener("scroll", function() {
         navbar.classList.remove("navbar-shadow");
     }
 });
+
+const text = "Hello! I'm Lukman Hafidz.";
+const delay = 150; // Delay antara setiap karakter (dalam milidetik)
+let index = 0;
+
+function typeWriter() {
+    if (index < text.length) {
+        document.getElementById("typed-text").innerHTML += text.charAt(index);
+        index++;
+        setTimeout(typeWriter, delay);
+    } else {
+        // Ketika semua huruf ditampilkan, tambahkan kursor berkedip
+        document.getElementById("typed-text").innerHTML += '<span class="cursor">|</span>';
+    }
+}
+
+window.addEventListener('DOMContentLoaded', typeWriter);
