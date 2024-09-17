@@ -1,0 +1,9 @@
+.img-hover {
+    transition: 0.3s !important;
+    border-radius: 15px !important;
+}
+
+.img-hover:hover {
+    transform: translate(-7px, -7px) !important;
+    box-shadow: 7px 7px 0px 0px var(--pr-lavender);
+}

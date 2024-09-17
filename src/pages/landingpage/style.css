@@ -1,0 +1,30 @@
+.section-gap {
+    margin-top: 10rem;
+}
+
+.cursor {
+    animation: blink 0.7s infinite;
+}
+
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.connect-btn {
+    background-color: var(--pr-lavender) !important;
+    transition: 0.3s;
+    color: white !important;
+}
+
+.connect-btn:hover {
+    background-color: var(--vr-lavender) !important;
+    transition: 0.3s;
+}
