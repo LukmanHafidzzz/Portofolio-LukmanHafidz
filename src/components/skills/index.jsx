@@ -7,7 +7,7 @@ export default function index(props) {
     return (
         <>
             <Col className='d-flex justify-content-center'>
-                <Image src={props.src} alt={props.alt} width={150} className='img-hover' />
+                <Image src={props.src} alt={props.alt} className='img-hover w-100' />
             </Col>
         </>
     )

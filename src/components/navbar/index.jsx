@@ -3,7 +3,7 @@ import { Button, Col, Container, Image, Modal, Nav, Navbar, Row } from 'react-bo
 import Script from './Script'
 import './style.css'
 import { MdEmail } from 'react-icons/md';
-import { FaLinkedin } from 'react-icons/fa';
+import { FaGithub, FaLinkedin } from 'react-icons/fa';
 import { IoLogoWhatsapp } from "react-icons/io";
 import { IoClose } from 'react-icons/io5';
 
@@ -44,7 +44,7 @@ export default function index() {
                 <Modal.Body className='py-5'>
                     <div className="d-flex flex-column justify-content-center align-items-center">
                         <div className="bg-profile d-flex justify-content-center align-items-center rounded-circle">
-                            <Image src="profile.png" alt="profile" className="rounded-circle" width="130" />
+                            <Image src="https://s3.nevaobjects.id/profile-porto/ydkxcvgln9pokzmrtglj.webp" alt="profile" className="rounded-circle" width="130" />
                         </div>
                         <div className="mt-3 fs-5 fw-medium text-center">
                             Lukman Hafidz
@@ -56,8 +56,8 @@ export default function index() {
                             <a href='https://mail.google.com/mail/?view=cm&fs=1&to=lukmanhafidz30@gmail.com' target='_blank' rel="noopener noreferrer" className="btn-contact d-flex justify-content-center align-items-center fs-5">
                                 <MdEmail />
                             </a>
-                            <a href='https://www.linkedin.com/in/lukman-hafidz-717120281/' className="btn-contact d-flex justify-content-center align-items-center fs-5">
-                                <FaLinkedin />
+                            <a href='https://github.com/LukmanHafidzzz' target='_blank' rel="noopener noreferrer" className="btn-contact d-flex justify-content-center align-items-center fs-5">
+                                <FaGithub />
                             </a>
                             <a href='https://wa.me/+62887433065059' target='_blank' rel="noopener noreferrer" className="btn-contact d-flex justify-content-center align-items-center fs-5">
                                 <IoLogoWhatsapp />

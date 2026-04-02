@@ -14,25 +14,27 @@ export default function Index() {
     return (
         <>
             <NewNavbar />
-            <Container className='section-gap' id='home'>
-                <Row className='d-flex justify-content-center align-items-center' data-aos="fade-up" data-aos-duration="1000">
-                    <Col>
-                        <p className="fw-medium text-white fs-6" id="typed-text" dangerouslySetInnerHTML={{ __html: typedText }}></p>
-                        <p className="fs-1 fw-semibold text-white">I create immersive <span className="text-span">web experiences</span> and build digital solutions</p>
-                        <p className="text-sr-grey fw-medium">Fullstack Web Developer Enthusiast</p>
-                        <p className="mt-3">
-                            <a className="btn fs-7 fw-semibold connect-btn ps-5 pt-3 pe-5 pb-3" href="https://github.com/LukmanHafidzzz" target="_blank">Get in Touch</a>
-                        </p>
+            <Container className='section-gap p-3' id='home'>
+                <Row className='d-flex justify-content-center align-items-center row-cols-1 row-cols-md-2' data-aos="fade-up" data-aos-duration="1000">
+                    <Col className='order-2 order-md-1'>
+                        <div className='text-md-start text-center'>
+                            <p className="fw-medium text-white fs-6" id="typed-text" dangerouslySetInnerHTML={{ __html: typedText }}></p>
+                            <p className="fs-1 fw-semibold text-white">I create immersive <span className="text-span">web experiences</span> and build digital solutions</p>
+                            <p className="text-sr-grey fw-medium">Fullstack Web Developer Enthusiast</p>
+                            <p className="mt-3">
+                                <a className="btn fs-7 fw-semibold connect-btn ps-5 pt-3 pe-5 pb-3" href="https://github.com/LukmanHafidzzz" target="_blank" rel='noreferrer'>Get in Touch</a>
+                            </p>
+                        </div>
                     </Col>
-                    <Col className='d-flex justify-content-center'>
-                        <Image src='Frame 5008.png' alt='Frame 5008' className='w-75' />
+                    <Col className='d-flex justify-content-center order-1 order-md-2'>
+                        <Image src='https://s3.nevaobjects.id/profile-porto/Frame%205008.webp' alt='Frame 5008' className='w-75' />
                     </Col>
                 </Row>
             </Container>
             <Container className="section-gap" id='about'>
-                <Row className='d-flex justify-content-center align-items-center' data-aos="fade-up" data-aos-duration="1000">
-                    <Col>
-                        <Image src='Frame 5009.png' alt='Frame 5009' className='w-75' />
+                <Row className='d-flex justify-content-center align-items-center row-cols-1 row-cols-md-2' data-aos="fade-up" data-aos-duration="1000">
+                    <Col className='d-flex justify-content-center d-md-flex justify-content-md-start'>
+                        <Image src='https://s3.nevaobjects.id/profile-porto/Frame%205009.webp' alt='Frame 5009' className='w-75' />
                     </Col>
                     <Col className='p-3'>
                         <p className="fs-3 fw-semibold text-white">About Me</p>
@@ -53,17 +55,17 @@ export default function Index() {
                 <Row data-aos="fade-up" data-aos-duration="1000">
                     <Col></Col>
                     <Col xl={10}>
-                        <Row xs={2} md={5} className='g-5'>
-                            <SkillsLogo src='html.png' alt='html' />
-                            <SkillsLogo src='css.png' alt='css' />
-                            <SkillsLogo src='js.png' alt='js' />
-                            <SkillsLogo src='react.png' alt='react' />
-                            <SkillsLogo src='sql.png' alt='mysql' />
-                            <SkillsLogo src='php.png' alt='php' />
-                            <SkillsLogo src='laravel.png' alt='laravel' />
-                            <SkillsLogo src='node.png' alt='node' />
-                            <SkillsLogo src='figma.png' alt='figma' />
-                            <SkillsLogo src='tailwind.png' alt='tailwind' />
+                        <Row xs={3} md={5} className='g-5 g-md-5'>
+                            <SkillsLogo src='https://s3.nevaobjects.id/profile-porto/html.webp' alt='html' />
+                            <SkillsLogo src='https://s3.nevaobjects.id/profile-porto/css.webp' alt='css' />
+                            <SkillsLogo src='https://s3.nevaobjects.id/profile-porto/js.webp' alt='js' />
+                            <SkillsLogo src='https://s3.nevaobjects.id/profile-porto/mzqqvfd31x0f1d8pkebb.webp' alt='react' />
+                            <SkillsLogo src='https://s3.nevaobjects.id/profile-porto/ac3unsyc9hmazhzbejdd.webp' alt='mysql' />
+                            <SkillsLogo src='https://s3.nevaobjects.id/profile-porto/php.webp' alt='php' />
+                            <SkillsLogo src='https://s3.nevaobjects.id/profile-porto/laravel.webp' alt='laravel' />
+                            <SkillsLogo src='https://s3.nevaobjects.id/profile-porto/node.webp' alt='node' />
+                            <SkillsLogo src='https://s3.nevaobjects.id/profile-porto/figma.webp' alt='figma' />
+                            <SkillsLogo src='https://s3.nevaobjects.id/profile-porto/hnanr3i10qrvj5aw4mz0.webp' alt='tailwind' />
                         </Row>
                     </Col>
                     <Col></Col>
@@ -71,7 +73,7 @@ export default function Index() {
             </Container>
             <Container className="section-gap mb-5" id="projects">
                 <p className="fs-3 fw-semibold text-center text-white mb-5" data-aos="fade-up" data-aos-duration="1000">My Projects</p>
-                <Row xs={1} md={3} className="g-4 mt-3" data-aos="fade-up" data-aos-duration="1000">
+                <Row xs={2} md={3} className="g-4 mt-3" data-aos="fade-up" data-aos-duration="1000">
                     <Col>
                         <Projects
                             src='project4.png'
